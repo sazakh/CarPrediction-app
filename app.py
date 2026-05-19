@@ -27,7 +27,7 @@ st.markdown("""
     .main-title {
         font-size: 60px;
         font-weight: 900;
-        color: #f2f3f4;
+        color: inharet;
         margin-bottom: 5px;
     }
 
@@ -233,15 +233,3 @@ with right:
         NPM: 237006097
     </div>
     """, unsafe_allow_html=True)
-
-# =========================
-# DATASET PREVIEW
-# =========================
-with st.expander("Lihat Dataset"):
-    st.dataframe(df, use_container_width=True)
-
-with st.expander("Informasi Dataset"):
-    st.write("Jumlah data:", df.shape[0])
-    st.write("Jumlah kolom:", df.shape[1])
-    st.write("Kolom dataset:")
-    st.write(df.columns.tolist())
